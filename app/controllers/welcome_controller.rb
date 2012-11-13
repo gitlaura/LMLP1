@@ -12,10 +12,16 @@ class WelcomeController < ApplicationController
 
       unless ENV["MAILCHIMP_LIST_ID"].nil? or ENV["MAILCHIMP_API_KEY"].nil?
 
-        gb = Gibbon.new
-        response = gb.list_subscribe({id: ENV["MAILCHIMP_LIST_ID"], email_address: person.email, double_optin: false, send_welcome: false})
-        render 'welcome/registered_email_success'
+        begin
+          gb = Gibbon.new
+          response = gb.list_subscribe({id: ENV["MAILCHIMP_LIST_ID"], email_address: person.email, double_optin: false, send_welcome: false})
+          render 'welcome/registered_email_success'
 
+        rescue Exception => exc
+          @message = exc.message
+          render 'welcome/registered_email_failure' 
+        end
+        
       else
 
         @message = "*********** Please specify MAILCHIMP_LIST_ID and MAILCHIMP_API_KEY in the environment variables."

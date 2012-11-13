@@ -16,8 +16,8 @@
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-31345307-1']);
-  _gaq.push(['_setDomainName', 'foodini.co']);
+  _gaq.push(['_setAccount', '<%= ENV["GOOGLE_ANALYTICS_ID"] %>']);
+  _gaq.push(['_setDomainName', '<%= ENV["DOMAIN_NAME"] %>']);
   _gaq.push(['_trackPageview']);
 
   (function() {

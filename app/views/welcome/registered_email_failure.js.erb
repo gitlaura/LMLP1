@@ -1,2 +1,2 @@
 $('form').remove();
-$('#message').html("<%= @message %>");
+$('#message').html('<%= @message.html_safe %>');
