@@ -23,8 +23,8 @@ p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
 }
-outer-contain {
-    background: url("../img/LMLP.jpg") no-repeat scroll center top;
+.outer-contain {
+    background: url(LMLP.jpg) no-repeat scroll center top;
     height: 3000px;
     margin: 0 auto;
     width: 1000px;
@@ -35,7 +35,7 @@ outer-contain {
 	height: 33px;
     width: 225px;
 	position: relative;
-	top: 240px; 
+	top: 240px;
 	left:680px;
 }
 #buttonone a{
@@ -44,7 +44,7 @@ outer-contain {
 	height: 40px;
     width: 200px;
 	position: relative;
-	top: 525px; 
+	top: 525px;
 	left:40%;
 }
 #buttontwo a{
@@ -53,7 +53,7 @@ outer-contain {
 	height: 40px;
     width: 200px;
 	position: relative;
-	top: 1070px; 
+	top: 1070px;
 	left:40%;
 }
 #buttonthree a{
@@ -62,7 +62,7 @@ outer-contain {
 	height: 40px;
     width: 200px;
 	position: relative;
-	top: 1630px; 
+	top: 1630px;
 	left:40%;
 }
 #buttonfour a{
@@ -71,7 +71,7 @@ outer-contain {
 	height: 40px;
     width: 200px;
 	position: relative;
-	top: 2025px; 
+	top: 2025px;
 	left:40%;
 }
 #buttonfive a{
@@ -80,7 +80,7 @@ outer-contain {
 	height: 40px;
     width: 200px;
 	position: relative;
-	top: 2680px; 
+	top: 2680px;
 	left:40%;
 }
 #textlinkone a{
@@ -126,7 +126,7 @@ outer-contain {
 }
 #signup {
     text-align: center;
-	
+
 }
 #signup input[type="text"] {
     background: no-repeat scroll 0 0 transparent;
@@ -155,7 +155,7 @@ outer-contain {
 #mc_embed_signup .button {clear:both; background-color: #aaa; border: 0 none; border-radius:4px; color: #FFFFFF; cursor: pointer; display: inline-block; font-size:15px; font-weight: bold; height: 32px; line-height: 32px; margin: 0 5px 10px 0; padding:0; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
 #mc_embed_signup .button:hover {background-color:#777;}
 #mc_embed_signup .small-meta {font-size: 11px;}
-#mc_embed_signup .nowrap {white-space:nowrap;}     
+#mc_embed_signup .nowrap {white-space:nowrap;}
 #mc_embed_signup .clear {clear:none; display:inline;}
 
 #mc_embed_signup label {display:block; font-size:16px; padding-bottom:10px; font-weight:bold;}

@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+// = require bootstrap
 
 $('form').on('submit', function(){
   $('#message').html("Adding email address...")
