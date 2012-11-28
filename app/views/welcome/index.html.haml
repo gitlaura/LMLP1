@@ -1,4 +1,54 @@
-%h2
+
+
+
+  %html
+  %head
+    %title Like Minded | Meet your therapist match.
+    %link{:href => "css/style.css", :rel => "stylesheet"}/
+    %link{:href => "css/bootstrap.min.css", :media => "screen", :rel => "stylesheet"}/
+  %body
+    .outer-contain
+      #product_box
+        %form#signup{:action => "/Like_minded/Landing Page Test 1/TestingLM2.html", :method => "get"}
+          %input{:name => "zipcode", :placeholder => "Enter zip code here", :title => "Zip Code", :type => "text"}/
+      #buttonsearch
+        %a{"data-toggle" => "modal", :href => "#myModal"}       #buttonone
+        %a{"data-toggle" => "modal", :href => "#myModal"}       #buttontwo
+        %a{"data-toggle" => "modal", :href => "#myModal"}       #buttonthree
+        %a{"data-toggle" => "modal", :href => "#myModal"}       #buttonfour
+        %a{"data-toggle" => "modal", :href => "#myModal"}       #buttonfive
+        %a{"data-toggle" => "modal", :href => "#myModal"}       #textlinkone
+        %a{"data-toggle" => "modal", :href => "#myModal"} Learn more about therapists >
+      #textlinktwo
+        %a{"data-toggle" => "modal", :href => "#myModal"} Learn more about searching >
+      #textlinkthree
+        %a{"data-toggle" => "modal", :href => "#myModal"} Learn more about consultations >
+      #textlinkfour
+        %a{"data-toggle" => "modal", :href => "#myModal"} Learn more about scheduling >
+    #myModal.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+      .modal-header
+        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+        %h3#myModalLabel Sign up for the waiting list
+      .modal-body
+        / Begin MailChimp Signup Form
+        #mc_embed_signup
+          %form#mc-embedded-subscribe-form.validate{:action => "http://likeminded.us6.list-manage.com/subscribe/post?u=32e2f8ba163ac0f96c709c192&id=4aac460b7d", :method => "post", :name => "mc-embedded-subscribe-form", :novalidate => "", :target => "_blank"}
+            %label{:for => "mce-EMAIL"}
+              Thank you for your interest, but Like Minded is not quite ready.
+              Please enter your email address and we will let you know when we launch.
+            %input#mce-EMAIL.email{:name => "EMAIL", :placeholder => "email address", :required => "", :type => "email", :value => ""}
+              .clear
+                %input#mc-embedded-subscribe.btn{:name => "Submit", :type => "submit", :value => "Submit"}/
+        / End mc_embed_signup
+      .modal-footer
+        %button.btn{"aria-hidden" => "true", "data-dismiss" => "modal"} Close
+    %footer
+      %script{:src => "http://code.jquery.com/jquery-latest.js"}
+      %script{:src => "js/bootstrap.js"}
+
+
+-#
+  %h2
   Welcome Page
 
 %h3{id: "message"}
@@ -7,4 +57,3 @@
   = f.label "Email", "email"
   = f.email_field :email
   = f.submit "Submit"
-  
