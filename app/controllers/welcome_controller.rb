@@ -19,9 +19,9 @@ class WelcomeController < ApplicationController
 
         rescue Exception => exc
           @message = exc.message
-          render 'welcome/registered_email_failure' 
+          render 'welcome/registered_email_failure'
         end
-        
+
       else
 
         @message = "*********** Please specify MAILCHIMP_LIST_ID and MAILCHIMP_API_KEY in the environment variables."

@@ -1,15 +1,4 @@
-<!-- <html>
 
-<head>
-
-  <title>Like Minded | Meet your therapist match.</title>
-
-  <link rel="stylesheet" href="custom.css"/>
-  <link rel="stylesheet" href="css/bootstrap.min.css" media="screen"/>
-
-</head>
-
-<body> -->
 
 <div class="outer-contain">
 
@@ -69,13 +58,11 @@
 <div class="modal-body">
     <!-- Begin MailChimp Signup Form -->
     <div id="mc_embed_signup">
-    <form accept-charset="UTF-8" action="/register-email" class="new_person" data-remote="true" id="new_person" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
-      <input id="person_email" name="person[email]" size="30" type="email">
-      <!-- = f.submit "Submit" -->
-      <!-- %button.btn{"aria-hidden" => "true", "data-dismiss" => "modal"} Close -->
-      <button class="btn btn-primary">Submit</button>
-<!-- %button.btn{"data-dismiss" => "modal", :type => "button"} Close -->
-</form>
+      <h4 id="message"></h4>
+      <%= form_for @person, url: register_email_path, remote: true, inner_html: { class: "new_person", id: "new_person" } do |f| %>
+        <%= f.email_field :email %>
+        <%= f.submit "Submit" %>
+      <% end %>
     </div>
     <!--End mc_embed_signup-->
 </div>
@@ -85,12 +72,3 @@
 </div>
 
 
-
-
-  
-
-
-
-<!-- </body>
-
-</html> -->
