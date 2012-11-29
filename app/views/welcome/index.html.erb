@@ -3,8 +3,8 @@
 <div class="outer-contain">
 
   <div id="product_box">
-      <form  id="signup" method="get" action="/Like_minded/Landing Page Test 1/TestingLM2.html">
-        <input type="text" name="zipcode" title="Zip Code" class="" placeholder="Enter zip code here"/>
+      <form  id="signup" method="get" action="#myModal" data-toggle="modal">
+        <input type="text" name="zipcode" title="Zip Code" class="" placeholder="Enter zip code"/>
       </form>
     </div>
 
@@ -51,21 +51,23 @@
 </div>
 
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-<div class="modal-header">
-<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-<h3 id="myModalLabel">Sign up for the waiting list</h3>
-</div>
-<div class="modal-body">
-    <!-- Begin MailChimp Signup Form -->
-    <div id="mc_embed_signup">
-      <h4 id="message"></h4>
-      <%= form_for @person, url: register_email_path, remote: true, inner_html: { class: "new_person", id: "new_person" } do |f| %>
-        <%= f.email_field :email %>
-        <%= f.submit "Submit" %>
-      <% end %>
-    </div>
-    <!--End mc_embed_signup-->
-</div>
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><center>
+    <h2 id="myModalLabel">
+      <%= image_tag "signup.JPG" %> 
+      </h2>
+  </div>
+  <div class="modal-body"><center>
+    <h3>Like Minded is not quite ready! 
+        Please enter your email address and we will let you know when we launch.</h3></br>
+      <div id="mc_embed_signup">
+        <h4 id="message"></h4>
+        <%= form_for @person, url: register_email_path, remote: true, inner_html: { class: "new_person", id: "new_person" } do |f| %>
+          <%= f.email_field :email, :placeholder => "email address" %> &nbsp &nbsp
+          <%= f.submit "Submit", :class => "btn" %>
+        <% end %>
+      </div>
+  </div>
 <div class="modal-footer">
 <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
 </div>

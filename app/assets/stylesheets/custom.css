@@ -19,10 +19,22 @@ img {
 a:hover, a:active {
     color: #D05C02;
 }
-p, h1, h2, h3, h4, h5, h6 {
+p {
+	color: #;
+}
+form > .btn {
+	vertical-align: top;
+}
+#header {
+	background: url(signup.jpg) no-repeat scroll center top;
+	background-color: #444444;
+	height: 50px;
+}
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
 }
+
 .outer-contain {
     background: url(LMLP.jpg) no-repeat scroll center top;
     height: 3000px;
@@ -35,7 +47,7 @@ p, h1, h2, h3, h4, h5, h6 {
 	height: 33px;
     width: 225px;
 	position: relative;
-	top: 240px;
+	top: 252px;
 	left:680px;
 }
 #buttonone a{
@@ -44,7 +56,7 @@ p, h1, h2, h3, h4, h5, h6 {
 	height: 40px;
     width: 200px;
 	position: relative;
-	top: 525px;
+	top: 537px;
 	left:40%;
 }
 #buttontwo a{
@@ -53,7 +65,7 @@ p, h1, h2, h3, h4, h5, h6 {
 	height: 40px;
     width: 200px;
 	position: relative;
-	top: 1070px;
+	top: 1082px;
 	left:40%;
 }
 #buttonthree a{
@@ -62,7 +74,7 @@ p, h1, h2, h3, h4, h5, h6 {
 	height: 40px;
     width: 200px;
 	position: relative;
-	top: 1630px;
+	top: 1637px;
 	left:40%;
 }
 #buttonfour a{
@@ -71,7 +83,7 @@ p, h1, h2, h3, h4, h5, h6 {
 	height: 40px;
     width: 200px;
 	position: relative;
-	top: 2025px;
+	top: 2037px;
 	left:40%;
 }
 #buttonfive a{
@@ -80,12 +92,12 @@ p, h1, h2, h3, h4, h5, h6 {
 	height: 40px;
     width: 200px;
 	position: relative;
-	top: 2680px;
+	top: 2692px;
 	left:40%;
 }
 #textlinkone a{
     position: relative;
-    top: 858px;
+    top: 873px;
 	left: 760px;
 	width: 220px;
 	font-weight: bold;
@@ -93,7 +105,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 #textlinktwo a{
     position: relative;
-    top: 1420px;
+    top: 1435px;
 	left: 40px;
 	width: 220px;
 	font-weight: bold;
@@ -101,7 +113,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 #textlinkthree a{
     position: relative;
-    top: 1875px;
+    top: 1890px;
 	left: 38%;
 	width: 270px;
 	font-weight: bold;
@@ -109,15 +121,15 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 #textlinkfour a{
     position: relative;
-    top: 2430px;
+    top: 2445px;
 	left: 760px;
 	width: 220px;
 	font-weight: bold;
 	font-size: 14px;
 }
 #product_box {
-    height: 25px;
-	width: 230px;
+    height: 15px;
+	width: 213px;
     margin: 0;
     padding: 0;
     position: relative;
@@ -130,14 +142,14 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 #signup input[type="text"] {
     background: no-repeat scroll 0 0 transparent;
-    color: #A4A4A4;
+    color: #000000;
     font-family: Arial;
     font-size: 16px;
-    height: 25px;
+    height: 15px;
 	margin-top: 0px;
     margin-right: 5px;
     padding-left: 5px;
-    width: 225px;
+    width: 213px;
 }
 #signup input:focus[type="text"] {
     font-color: #000000;
@@ -146,24 +158,3 @@ p, h1, h2, h3, h4, h5, h6 {
 #signup #zipcode {
 	top: 0px
 }
-#mc_embed_signup form {display:block; position:relative; text-align:left; padding:10px 0 10px 3%}
-#mc_embed_signup h2 {font-weight:bold; padding:0; margin:15px 0; font-size:1.4em;}
-#mc_embed_signup input {border:1px solid #999; -webkit-appearance:none;}
-#mc_embed_signup input[type=checkbox]{-webkit-appearance:checkbox;}
-#mc_embed_signup input[type=radio]{-webkit-appearance:radio;}
-#mc_embed_signup input:focus {border-color:#333;}
-#mc_embed_signup .button {clear:both; background-color: #aaa; border: 0 none; border-radius:4px; color: #FFFFFF; cursor: pointer; display: inline-block; font-size:15px; font-weight: bold; height: 32px; line-height: 32px; margin: 0 5px 10px 0; padding:0; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
-#mc_embed_signup .button:hover {background-color:#777;}
-#mc_embed_signup .small-meta {font-size: 11px;}
-#mc_embed_signup .nowrap {white-space:nowrap;}
-#mc_embed_signup .clear {clear:none; display:inline;}
-
-#mc_embed_signup label {display:block; font-size:16px; padding-bottom:10px; font-weight:bold;}
-#mc_embed_signup input.email {font-size:16px; color:#000000; display:block; padding:0px 0; margin:0 4% 10px 0; text-indent:5px; height:30px; width:58%; min-width:130px;}
-#mc_embed_signup input.button {display:block; width:35%; margin:0 0 10px 0; min-width:90px;}
-
-#mc_embed_signup div#mce-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%;margin: 0 5%; clear: both;}
-#mc_embed_signup div.response {margin:1em 0; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%;}
-#mc_embed_signup #mce-error-response {display:none;}
-#mc_embed_signup #mce-success-response {color:#529214; display:none;}
-#mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
