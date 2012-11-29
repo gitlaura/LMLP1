@@ -23,18 +23,13 @@ a:hover, a:active {
 form > .btn {
 	vertical-align: top;
 }
-#header {
-	background: url(signup.jpg) no-repeat scroll center top;
-	background-color: #444444;
-	height: 50px;
-}
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
 }
 
 .outer-contain {
-    background: url(LMLP.jpg) no-repeat scroll center top;
+    background: url(landingpage.jpg) no-repeat scroll center top;
     height: 3000px;
     margin: 0 auto;
     width: 1000px;
@@ -126,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 14px;
 }
 #product_box {
-    height: 15px;
+    height: 18px;
 	width: 213px;
     margin: 0;
     padding: 0;
@@ -143,9 +138,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #000000;
     font-family: Arial;
     font-size: 16px;
-    height: 15px;
+    height: 18px;
 	margin-top: 0px;
-    margin-right: 5px;
     padding-left: 5px;
     width: 213px;
 }
@@ -153,6 +147,10 @@ h1, h2, h3, h4, h5, h6 {
     font-color: #000000;
 	padding-left: 5px
 }
-#signup #zipcode {
-	top: 0px
+.headerlabel {
+	background: url(signup.JPG) repeat scroll center top;
+	height: 47px;
+	border-radius: 6px 6px 0px 0px;
+	border-bottom: 1px solid #EEEEEE;
+    padding: 9px 15px;
 }
