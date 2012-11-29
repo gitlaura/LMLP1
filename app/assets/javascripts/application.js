@@ -15,6 +15,11 @@
 //= require_tree .
 // = require bootstrap
 
-$('form').on('submit', function(){
+$('form#new_person').on('submit', function(){
   $('#message').html("Adding email address...")
+});
+
+$('form#signup').on('submit', function(e){
+	$('#buttonsearch a').click();
+  e.preventDefault();
 });
