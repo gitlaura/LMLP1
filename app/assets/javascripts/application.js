@@ -20,6 +20,7 @@ $('form#new_person').on('submit', function(){
 });
 
 $('form#signup').on('submit', function(e){
-	$('#buttonsearch a').click();
+	$('#myModal').modal('toggle');
   e.preventDefault();
+  ga('send', 'event', 'searchbox', 'click', 'zipcode');
 });
