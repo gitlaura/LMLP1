@@ -9,7 +9,7 @@ body {
     padding: 0;
 }
 a {
-    color: #F26C06;
+    color: #ff6600;
     font-weight: bold;
     text-decoration: none;
 }
@@ -17,7 +17,7 @@ img {
     border: medium none;
 }
 a:hover, a:active {
-    color: #D05C02;
+    color: #E65C00;
 }
 
 form > .btn {
@@ -33,6 +33,33 @@ h1, h2, h3, h4, h5, h6 {
     height: 3000px;
     margin: 0 auto;
     width: 1000px;
+}
+#product_box {
+    height: 18px;
+	width: 213px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 240px;
+	left:680px
+}
+#signup {
+    text-align: center;
+
+}
+#signup input[type="text"] {
+    background: no-repeat scroll 0 0 transparent;
+    color: #000000;
+    font-family: Arial;
+    font-size: 16px;
+    height: 18px;
+	margin-top: 0px;
+    padding-left: 5px;
+    width: 213px;
+}
+#signup input:focus[type="text"] {
+    font-color: #000000;
+	padding-left: 5px
 }
 #buttonsearch a{
 	display: block;
@@ -120,32 +147,14 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 	font-size: 14px;
 }
-#product_box {
-    height: 18px;
-	width: 213px;
-    margin: 0;
-    padding: 0;
+#textlinktherapist a{
     position: relative;
-    top: 240px;
-	left:680px
-}
-#signup {
-    text-align: center;
+    top: -285px;
+	left: 790px;
+	width: 220px;
+	font-weight: bold;
+	font-size: 14px;
 
-}
-#signup input[type="text"] {
-    background: no-repeat scroll 0 0 transparent;
-    color: #000000;
-    font-family: Arial;
-    font-size: 16px;
-    height: 18px;
-	margin-top: 0px;
-    padding-left: 5px;
-    width: 213px;
-}
-#signup input:focus[type="text"] {
-    font-color: #000000;
-	padding-left: 5px
 }
 .headerlabel {
 	background: url(signup.JPG) repeat scroll center top;
@@ -154,3 +163,34 @@ h1, h2, h3, h4, h5, h6 {
 	border-bottom: 1px solid #EEEEEE;
     padding: 9px 15px;
 }
+
+
+.therapistmodal {
+	background-clip: padding-box;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    left: 50%;
+    margin: -250px 0 0 -280px;
+    overflow: hidden;
+    position: fixed;
+    top: 40%;
+    width: 700px;
+    z-index: 1050;
+}
+.therapistmodalbody {
+    padding: 5px;
+    height: 500px;
+}
+
+.therapistmodal.fade.in{
+	top: 40%;
+}
+.therapistmodal.fade {
+    -moz-transition: opacity 0.3s linear 0s, top 0.3s ease-out 0s;
+    top: -25%;
+}
+#therapistform {position:absolute;width:100%;height:500px;}
+  
+iframe {height:500px; width:690px; pxborder:none;}
