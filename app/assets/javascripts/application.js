@@ -22,6 +22,6 @@ $('form#new_person').on('submit', function(){
 $('form#signup').on('submit', function(e){
 	console.log("modal")
 	$('#myModal').modal('toggle');
-  	_gaq.push(['_trackEvent', 'searchbox', 'click', 'zipcode']);
+  	_gaq.push(['_trackEvent', 'searchbox', 'click', 'zipcodebox']);
   	e.preventDefault();
 });

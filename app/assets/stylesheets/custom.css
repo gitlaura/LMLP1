@@ -163,7 +163,13 @@ h1, h2, h3, h4, h5, h6 {
 	border-bottom: 1px solid #EEEEEE;
     padding: 9px 15px;
 }
-
+.headerlabeltherapist {
+	background: url(areyouatherapist.jpg) repeat scroll center top;
+	height: 47px;
+	border-radius: 6px 6px 0px 0px;
+	border-bottom: 1px solid #EEEEEE;
+    padding: 9px 15px;
+}
 
 .therapistmodal {
 	background-clip: padding-box;
