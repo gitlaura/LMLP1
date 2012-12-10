@@ -38,4 +38,12 @@ class WelcomeController < ApplicationController
 
   end
 
+  def therapists
+    @person = Person.new
+  end
+
+  def signupform
+
+  end
+
 end
