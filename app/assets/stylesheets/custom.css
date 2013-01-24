@@ -34,6 +34,12 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
     width: 1000px;
 }
+.outer-contain2 {
+    background: url(therapistpage.jpg) no-repeat scroll center top;
+    height: 1480px;
+    margin: 0 auto;
+    width: 1000px;
+}
 #product_box {
     height: 18px;
 	width: 213px;
@@ -167,7 +173,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #textlinktherapist a{
     position: relative;
-    top: -285px;
+    top: -281px;
 	left: 790px;
 	width: 220px;
 	font-weight: bold;
@@ -182,7 +188,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 9px 15px;
 }
 .headerlabeltherapist {
-	background: url(areyouatherapist.jpg) repeat scroll center top;
+	background: url(signup.JPG) repeat scroll center top;
 	height: 47px;
 	border-radius: 6px 6px 0px 0px;
 	border-bottom: 1px solid #EEEEEE;
@@ -218,3 +224,67 @@ h1, h2, h3, h4, h5, h6 {
 #therapistform {position:absolute;width:100%;height:500px;}
   
 iframe {height:500px; width:690px; pxborder:none;}
+
+#therabuttonone a{
+	display: block;
+	background-color: transparent;
+	height: 35px;
+    width: 145px;
+	position: relative;
+	top: 575px;
+	left:6.5%;
+}
+#therabuttontwo a{
+	display: block;
+	background: transparent;
+	height: 35px;
+    width: 145px;
+	position: relative;
+	top: 540px;
+	left:30.5%;
+}
+#therabuttonthree a{
+	display: block;
+	background: transparent;
+	height: 35px;
+    width: 145px;
+	position: relative;
+	top: 505px;
+	left:55%;
+}
+#therabuttonfour a{
+	display: block;
+	background: transparent;
+	height: 35px;
+    width: 145px;
+	position: relative;
+	top: 470px;
+	left:79%;
+}
+#therabuttonfive a{
+	display: block;
+	background: transparent;
+	height: 40px;
+    width: 200px;
+	position: relative;
+	top: 820px;
+	left:40%;
+}
+#therabuttonsix a{
+	display: block;
+	background: transparent;
+	height: 40px;
+    width: 200px;
+	position: relative;
+	top: 1180px;
+	left:40%;
+}
+#theratextlinktherapist a{
+    position: relative;
+    top: -178px;
+	left: 790px;
+	width: 220px;
+	font-weight: bold;
+	font-size: 14px;
+
+}

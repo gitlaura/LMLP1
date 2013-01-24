@@ -1,83 +1,39 @@
 
 
-<div class="outer-contain">
+<div class="outer-contain2">
 
-  <div id="product_box">
-      <form  id="Tsignup" >
-        <input type="text" name="zipcode" title="Zip Code" class="" placeholder="Enter zip code"/>
-      </form>
+  <div id="therabuttonone">
+    <a href="#myModalTherapist" data-toggle="modal" onClick="_gaq.push(['_trackEvent', 'TButton', 'Click', 'TDirectoryBtn']);"> </a>
   </div>
 
-  <div id="buttonsearch">
-    <a href="#myModal" data-toggle="modal" onClick="_gaq.push(['_trackEvent', 'Tbutton', 'Click', 'TSearchbtn']);"> </a>
+  <div id="therabuttontwo">
+    <a href="#myModalTherapist" data-toggle="modal" onClick="_gaq.push(['_trackEvent', 'TButton', 'Click', 'TSchedulingBtn']);"> </a>
   </div>
 
-  <div id="buttonone">
-    <a href="#myModal" data-toggle="modal" onClick="_gaq.push(['_trackEvent', 'TButton', 'Click', 'TStartnownbtn']);"> </a>
+  <div id="therabuttonthree">
+    <a href="#myModalTherapist" data-toggle="modal" onClick="_gaq.push(['_trackEvent', 'TButton', 'Click', 'TVideochatBtn']);"> </a>
   </div>
 
-  <div id="buttontwo">
-    <a href="#myModal" data-toggle="modal" onClick="_gaq.push(['_trackEvent', 'TButton', 'Click', 'TStep1btn']);"> </a>
+  <div id="therabuttonfour">
+    <a href="#myModalTherapist" data-toggle="modal" onClick="_gaq.push(['_trackEvent', 'TButton', 'Click', 'TAppBtn']);"> </a>
   </div>
 
-  <div id="buttonthree">
-    <a href="#myModal" data-toggle="modal" onClick="_gaq.push(['_trackEvent', 'TButton', 'Click', 'TStep2btn']);"> </a>
+  <div id="therabuttonfive">
+    <a href=/signupform onClick="_gaq.push(['_trackEvent', 'TButton', 'Click', 'TSignup1']);"> </a>
   </div>
 
-  <div id="buttonfour">
-    <a href="#myModal" data-toggle="modal" onClick="_gaq.push(['_trackEvent', 'TButton', 'Click', 'TStep3btn']);"> </a>
+  <div id="therabuttonsix">
+    <a href=/signupform onClick="_gaq.push(['_trackEvent', 'TButton', 'Click', 'TSignup2']);"> </a>
   </div>
 
-  <div id="buttonfive">
-    <a href="#myModal" data-toggle="modal" onClick="_gaq.push(['_trackEvent', 'TButton', 'Click', 'TStep4btn']);"> </a>
-  </div>
-
-  <div id="textlinkone">
-    <a href="#myModal" data-toggle="modal" onClick="_gaq.push(['_trackEvent', 'TTextLink', 'Click', 'TStep1text']);">Learn more about therapists > </a>
-  </div>
-
-  <div id="textlinktwo">
-    <a href="#myModal" data-toggle="modal" onClick="_gaq.push(['_trackEvent', 'TTextLink', 'Click', 'TStep2text']);">Learn more about searching > </a>
-  </div>
-
-  <div id="textlinkthree">
-    <a href="#myModal" data-toggle="modal" onClick="_gaq.push(['_trackEvent', 'TTextLink', 'Click', 'TStep3text']);">Learn more about consultations > </a>
-  </div>
-
-  <div id="textlinkfour">
-    <a href="#myModal" data-toggle="modal" onClick="_gaq.push(['_trackEvent', 'TTextLink', 'Click', 'TStep4text']);">Learn more about scheduling > </a>
-  </div>
-
-  <div id="textlinktherapist">
-    <a href="#myModalTherapist" data-toggle="modal" onClick="_gaq.push(['_trackEvent', 'TContactus', 'Click', 'TTheraSignup']);"> Therapist Contact Form > </a>
+  <div id="theratextlinktherapist">
+    <a href=/signupform onClick="_gaq.push(['_trackEvent', 'TContactus', 'Click', 'TTheraSignup']);"> Therapist Signup Form > </a>
   </div>
 
 </div>
 
 
-<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="headerlabel">   
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><center>          
-  </div>
-  <div class="modal-body"><center>    
-    <h3>Like Minded is not quite ready! 
-        Please enter your email address and we will let you know when we launch.</h3></br>      
-    <div id="mc_embed_signup">      
-      <h4 id="message"></h4>        
-      <%= form_for @person, url: register_email_path, remote: true, inner_html: { class: "new_person", id: "new_person" } do |f| %>
-      <%= f.email_field :email, :placeholder => "Enter email address" %>
-      &nbsp 
-      <%= f.submit "Submit", :class => "btn" %>
-      <% end %>
-    </div>  
-  </div>
-  <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-  </div>
-</div>
-
-
-<div id="myModalTherapist" class="therapistmodal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div id="myModalTherapist" class="therapistmodal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="headerlabeltherapist">
        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><center>
     </div>
